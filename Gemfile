@@ -2,10 +2,11 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
+gem 'bootstrap-sass'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'omniauth-facebook', '~> 5.0'
 gem 'omniauth', '~> 1.9'
-gem 'therubyracer', '~> 0.12.2'
+gem 'therubyracer'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
