@@ -6,6 +6,8 @@ class TicketController < ApplicationController
   end
 
   def create
+    @ticket = Ticket.new(ticket_params)
+    authorize! :create, @ticket
   end
 
   def show
@@ -19,4 +21,11 @@ class TicketController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def ticket_params
+    params.require(:ticket).permit(:description, :price, :event)
+  end
+
 end
