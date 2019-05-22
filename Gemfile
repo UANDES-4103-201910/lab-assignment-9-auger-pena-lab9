@@ -11,6 +11,7 @@ gem 'therubyracer'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'cancancan', '~> 3.0', '>= 3.0.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
