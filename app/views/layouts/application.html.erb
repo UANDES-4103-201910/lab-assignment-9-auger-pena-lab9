@@ -21,10 +21,26 @@
     </header>
 
 
-  <p id="notice"><%= notice %></p>
 <div class="container center-text">
+
+  <div class="row">
+<% if user_signed_in? %>
+  <li>
+  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+  <%= user_signed_in? %>        
+  </li>
+<% else %>
+  <li>
+  <%= user_signed_in? %>        
+  <%= link_to('Login', new_user_session_path)  %>  
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+  </li>
+<% end %>
+  </div>
   <div class="row">
    <div class="col-md-6">
+    <p id="notice"><%= notice %></p>
+
     <%= yield %>
    </div>
   </div>
