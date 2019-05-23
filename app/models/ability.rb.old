@@ -8,7 +8,7 @@ class Ability
     if user.present?
       can :update, [Ticket, UserTicket]
       if user.admin?
-        can :create, [Event,Ticket, TicketType]
+        can :create, [Event,Ticket]
       end
     end
 

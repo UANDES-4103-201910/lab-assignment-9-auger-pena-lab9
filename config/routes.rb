@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ticket_types
   devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
   get 'ticket/index'
   get 'ticket/new'
@@ -23,7 +24,7 @@ Rails.application.routes.draw do
 
   #root :to => 'sessions#new'
 
-  root :to => 'tickets#index'
+  root :to => 'events#index'
 
   # post '/login',   to: 'sessions#create', as: :log_in
   #delete '/log_out' => 'sessions#destroy', as: :log_out

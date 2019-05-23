@@ -50,3 +50,5 @@ UserTicket.create(user: user_3, ticket: ticket_9, paid: true, time: DateTime.now
 UserTicket.create(user: user_1, ticket: ticket_10, paid: true, time: DateTime.now())
 UserTicket.create(user: user_2, ticket: ticket_11, paid: true, time: DateTime.now())
 UserTicket.create(user: user_3, ticket: ticket_12, paid: true, time: DateTime.now())
+
+TicketType.create(name: 'VIP', description: 'Carozzi')
