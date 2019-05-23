@@ -6,8 +6,5 @@ class ApplicationController < ActionController::Base
 
   end
 
-  def current_user
-	#complete this method
-  end
 
 end
